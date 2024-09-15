@@ -1,7 +1,16 @@
-# Halo semua! 
+### Hi! 👋 I'm Putra.
 
-Perkenalkan nama saya **Putra Fauzan**.<br>
+An independent Software Engineer who loves to create and share projects about web and mobile technology! I've enjoyed JavaScript and make it the main language in creating a project.
 
-Saya seorang **Front End Developer dan mahasiswa** di [UIN Sunan Gunung Djati Bandung](https://uinsgd.ac.id//).<br>
+- 🔭 I’m currently working on <a href="https://github.com/dicodingacademy">@dicodingacademy</a>
+- 🌱 I’m currently learning about cloud technology for back-end apps
+- 💬 Feel free to ask me about web development or JavaScript
+- 📫 How to reach me: putrafauzan32@gmail.com
+- ⚡ Fun fact: Novice Pianist
 
-Jika kamu tertarik untuk berkenalan denganku, silakan ikuti akun [Linkedin](https://www.linkedin.com/in/putra-fauzan-56411216a//)ku ya.
+<p align="left">
+<a href="https://github.com/penuliscode">
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=penuliscode&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=penuliscode&layout=compact&layout=compact&theme=algolia"/>
+</a>
+</p>
