@@ -2,7 +2,7 @@
 
 An independent Software Engineer who loves to create and share projects about web and mobile technology! I've enjoyed JavaScript and make it the main language in creating a project.
 
-- 🔭 I’m currently working on <a href="https://github.com/dicodingacademy">@dicodingacademy</a>
+- 🔭 I'm studying at UIN Sunan Gunung Djati Bandung 
 - 🌱 I’m currently learning about cloud technology for back-end apps
 - 💬 Feel free to ask me about web development or JavaScript
 - 📫 How to reach me: putrafauzan32@gmail.com
