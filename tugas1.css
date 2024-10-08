@@ -57,6 +57,16 @@ html {
     object-fit: cover;
   }
 
+  #btn-kirim {
+    background-color: darkslategray; color: white; border-style: none; 
+    transition: 0.6s;
+    border-radius: 5px;
+  }
+
+   #btn-kirim:hover {
+    background-color: white; color: black 
+  }
+
   @media (max-width: 768px) {
     #home {
       background-position: top; /* Gambar di atas pada layar lebih kecil */
