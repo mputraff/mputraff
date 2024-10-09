@@ -1,0 +1,7 @@
+*{
+    font-family: "Fredoka", system-ui; 
+}
+
+html {
+    scroll-behavior: smooth;
+}

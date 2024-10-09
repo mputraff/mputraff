@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tugas2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-zinc-700 p-4">
+        <div
+          class="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center"
+        >
+          <div class="col-span-1 flex gap-2 items-center">
+            <div class="w-8 h-8 flex">
+              <img src="./Img/traveltix.png" alt="" />
+            </div>
+            <a href="#Hero" class="text-white text-xl font-semibold"
+              >TravelTix</a
+            >
+          </div>
+          <!-- Menu Links (hidden on mobile) -->
+          <div
+            class="hidden md:flex md:col-span-2 lg:col-span-3 justify-end space-x-4"
+          >
+            <a href="#Hero" class="text-gray-300 hover:text-white">Home</a>
+            <a href="#Features" class="text-gray-300 hover:text-white"
+              >Features</a
+            >
+            <a href="#Testimonials" class="text-gray-300 hover:text-white">About</a>
+            
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="col-span-1 flex justify-end md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <a
+            href="#Hero"
+            class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+            >About</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="Hero" class="h-svh bg-[#212121] max-md:h-auto">
+      <div
+        class="flex gap-64 py-14 justify-center h-full items-center max-md:flex-col-reverse max-md:gap-10"
+      >
+        <div class="flex flex-col gap-4 ml-10 max-md:ml-0">
+          <h1 class="text-7xl text-white mb-2 max-md:text-5xl">TravelTix</h1>
+          <p class="text-4xl text-white max-md:text-xl">
+            Solusi terbaik untuk perjalanan anda
+          </p>
+          <p class="text-4xl text-white max-md:text-xl">
+            Aman, Nyaman, Terpercaya
+          </p>
+          <button
+            class="text-center mt-8 text-gray-800 text-2xl max-md:text-xl max-md:w-5/6 bg-white py-2 w-4/6 rounded-xl hover:bg-gray-300 transition duration-300"
+          >
+            Download Aplikasi Sekarang!
+          </button>
+        </div>
+        <div class="w-4/4 h-4/5 flex">
+          <img src="./Img/traveltix.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="Features" class="h-auto bg-[#212121]">
+      <div class="flex px-20 gap-20 py-20 max-md:flex-col">
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg border bg-[#fff]"
+        >
+          <img
+            class="w-full h-72"
+            src="./Img/Tiket.png"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Pencarian Mudah</div>
+            <p class="text-gray-700 text-base">
+              Cari dan pesan penerbangan dengan cepat dan mudah.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >#traveltiv</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >#travel</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="max-w-sm rounded overflow-hidden shadow-lg border bg-[#fff]"
+        >
+          <img
+            class="w-full h-72"
+            src="./Img/discount.png"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Penawaran Spesial</div>
+            <p class="text-gray-700 text-base">
+              Dapatkan diskon menarik untuk berbagai rute penerbangan.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >#photography</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >#travel</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >#winter</span
+            >
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg border bg-white">
+          <img
+            class="w-full h-72"
+            src="./Img/customer.png"
+            alt="Sunset in the mountains"
+          />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Dukungan Pelanggan 24/7</div>
+            <p class="text-gray-700 text-base">
+              Tim kami siap membantu Anda kapan saja.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >#photography</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >#travel</span
+            >
+            <span
+              class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              >#winter</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Testimoni -->
+    <section id="Testimonials" class="bg-zinc-700 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8 text-white">
+          Apa Kata Mereka?
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimoni Card 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="./Img/testi1.jpeg"
+                alt="User Avatar"
+              />
+              <div>
+                <h3 class="text-lg font-semibold">Fazar Rizky</h3>
+                <p class="text-sm text-gray-500">CEO, Company Efishery</p>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "Produk ini benar-benar membantu meningkatkan produktivitas kami.
+              Tim kami sangat puas dengan hasilnya!"
+            </p>
+          </div>
+
+          <!-- Testimoni Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="./Img/testi2.jpeg"
+                alt="User Avatar"
+              />
+              <div>
+                <h3 class="text-lg font-semibold">Aditya Hafizh</h3>
+                <p class="text-sm text-gray-500">Manager, Gdg Cloud Bandung</p>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "Layanan yang diberikan sangat profesional dan tepat waktu. Saya
+              sangat merekomendasikan produk ini!"
+            </p>
+          </div>
+
+          <!-- Testimoni Card 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="./Img/testi3.jpeg"
+                alt="User Avatar"
+              />
+              <div>
+                <h3 class="text-lg font-semibold">Rifky Adi</h3>
+                <p class="text-sm text-gray-500">Freelancer</p>
+              </div>
+            </div>
+            <p class="text-gray-600">
+              "Sangat bermanfaat bagi usaha kecil seperti saya! Fitur-fiturnya
+              sangat mudah digunakan."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#212121] text-white py-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Deskripsi Singkat -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Tentang Kami</h3>
+            <p class="text-gray-400">
+              Kami menyediakan solusi inovatif untuk membantu bisnis Anda
+              tumbuh. Hubungi kami untuk mendapatkan informasi lebih lanjut
+              tentang layanan dan produk kami.
+            </p>
+          </div>
+
+          <!-- Navigasi -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Navigasi</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Beranda</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Layanan</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Fitur</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Kontak</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Media Sosial -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22.46 6c-.77.35-1.6.58-2.47.69a4.26 4.26 0 001.88-2.34 8.32 8.32 0 01-2.66 1.02 4.2 4.2 0 00-7.16 3.82A11.92 11.92 0 012.22 4.4a4.18 4.18 0 001.3 5.59A4.19 4.19 0 012 9.29v.05a4.2 4.2 0 003.36 4.12 4.2 4.2 0 01-1.9.07 4.21 4.21 0 003.92 2.91A8.42 8.42 0 012 19.54a11.88 11.88 0 006.29 1.84c7.55 0 11.68-6.25 11.68-11.67 0-.18 0-.35-.01-.53a8.35 8.35 0 002.07-2.12z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.04c-5.5 0-10 4.48-10 10 0 4.41 3.59 8.06 8.21 8.61v-6.09h-2.47v-2.5h2.47V9.85c0-2.44 1.49-3.78 3.66-3.78 1.04 0 1.94.08 2.2.11v2.56h-1.51c-1.19 0-1.42.57-1.42 1.4v1.83h2.84l-.37 2.5h-2.47v6.09C18.41 20.1 22 16.45 22 12.04c0-5.52-4.5-10-10-10z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.04c-5.5 0-10 4.48-10 10 0 4.41 3.59 8.06 8.21 8.61v-6.09h-2.47v-2.5h2.47V9.85c0-2.44 1.49-3.78 3.66-3.78 1.04 0 1.94.08 2.2.11v2.56h-1.51c-1.19 0-1.42.57-1.42 1.4v1.83h2.84l-.37 2.5h-2.47v6.09C18.41 20.1 22 16.45 22 12.04c0-5.52-4.5-10-10-10z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.63 0-12 5.37-12 12 0 5.3 3.44 9.8 8.2 11.4v-8.07H7.22v-3.34H8.2V8.47c0-1.17.67-2.89 2.88-2.89h2.06V6.9h-1.5c-.84 0-1.02.41-1.02 1.02v1.47h2.67L12.3 12h-2.58v8.07c4.76-1.6 8.2-6.1 8.2-11.4 0-6.63-5.37-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 border-t border-gray-700 pt-4">
+          <p class="text-center text-gray-400">
+            &copy; 2024 TravelTix. Semua Hak Dilindungi.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="tugas2.js"></script>
+  </body>
+</html>
